@@ -34,7 +34,7 @@ for guess_num in range(1, 7):
         if feedback[i] == "":
             if guess_chars[i] in word_chars:
                 feedback[i] = f"{YELLOW_BG}{guess_chars[i].upper()}{RESET}"
-                word_chars[word_chars.index(guess_chars[i])] = None  # Remove to avoid reuse
+                word_chars[word_chars.index(guess_chars[i])] = None 
             else:
                 feedback[i] = f"{GRAY_FG}{guess_chars[i].upper()}{RESET}"
 
